@@ -1,118 +1,276 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
+    <section>
+      <div className="heading bg-[#FFFF00] w-full">
+        <div className="w-full border border-gray-600"></div>
+        <h1 className="py-6 px-3 text-4xl font-bold">Are you feeling tired or overwhelmed by the demands of parenting, having trouble setting limits and boundaries for your children and feeling like you're not enjoying your parenting journey?</h1>
+        <div className="w-full border border-gray-600"></div>
+      </div>
+
+      <div className="subhead text-[#ff0000] font-[500] mt-16 text-5xl leading-[60px]">
+        <b>WARNING:</b> This could be the most important information you will ever read about raising successful and happy kids.
+      </div>
+
+      <div className="subhead2 text-[#0000FF] font-[500] mt-16 text-4xl leading-[50px]">
+        Discover the little-known (and never talked about) success philosophies, beliefs, thinking, and personal behaviors that allow parents to raise confident, capable, and resilient children who are on track to achieve their full potential.
+      </div>
+
+      <div className="content mt-16 text-2xl">
+        <p>
+          Dear friend,
+          <br /> <br /> Today….
+          <br /> <br /> I'll share with you the exact steps, and specific directions to help you raise a happy, healthy and well adjusted child… <br /> <br /> ….and you don't have to try to be perfect to achieve this… <br /> <br />
+          My name is David, and I'd like to show you the exact steps and guidelines to help you be more successful in raising your children with the right parenting skills. <br /> <br />
+          The secret isn't about being controlling or demanding or being an authoritarian parent.. <br /> <br />
+          Or being a permissive parent, being lenient with your child, or giving them lots of freedom. <br /> <br /> It's about understanding effective parenting and how it works, your role as a parent and the impact on your child's development.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+
+        <p className="my-16">
+          And how your effective parenting style will make them great. <br /> <br /> And you don't have to be a perfect parent…you just need to know the secret that 81% of parents don't know.
+          <br /> <br /> And you can find everything you need to know in – <b>The Art of Parenting For Success.</b>
+          <br /> <br /> This blueprint consists of the same steps and specific directions that my parents used in raising me and my siblings.
+          <br /> <br /> And I am giving it to you for FREE.
+          <br /> <br /> In just a moment, I'll tell you how you can get your FREE COPY,
+          <br /> <br /> But first, I need you to understand something about children, and especially your kids. <br /> <br /> It's something I've been trying to tell lots of parents for some time now.
+        </p>
+
+        <ul className="my-16 ml-8">
+          <li className="my-8">Children are individuals. They each have their own unique personalities, strengths and weaknesses.</li>
+
+          <li className="my-8">Children are constantly learning and growing. They are developing new skills and abilities all the time.</li>
+
+          <li className="my-8">Children need love and support. They need to feel loved and accepted by their parents in order to thrive.</li>
+
+          <li className="my-8">Children need boundaries and structure. They need to know what is expected of them and what the consequences are for their actions.</li>
+
+          <li className="my-8">Children need discipline, but discipline is not about punishment. It is about teaching your child right from wrong and helping them to develop self-control.</li>
+
+          <li className="my-8">Children need to make mistakes. Mistakes are a part of learning and growing. It is important to allow your child to make mistakes and to learn from them.</li>
+
+          <li className="my-8">Children need to be heard. They need to feel like their opinions and feelings matter.</li>
+
+          <li className="my-8">Children need to be celebrated.</li>
+        </ul>
+
+        <p className="my-8">Just that and nothing more…</p>
+
+        <p className="my-8">And if you can…</p>
+
+        <ul className="my-16 ml-8">
+          <li className="my-8">Treat your child as an individual and tailor your parenting styles to their specific needs.</li>
+
+          <li className="my-8">Be patient and understanding as they learn and grow.</li>
+
+          <li className="my-8">Give them your support and lots of love, both verbally and physically.</li>
+
+          <li className="my-8">Set clear rules and boundaries for your child and be consistent in enforcing them.</li>
+
+          <li className="my-8">Use positive discipline techniques, such as natural consequences and time-outs to teach your child appropriate behavior.</li>
+
+          <li className="my-8">Stop being too quick to criticize or punish your child for their mistakes.</li>
+
+          <li className="my-8">Take the time to listen to your child and to understand their point of view.</li>
+
+          <li className="my-8">Celebrate their accomplishments</li>
+        </ul>
+
+        <p>
+          You can be a more effective parent and help your child grow up to be a happy, healthy and successful adult.
+          <br /> <br />
+          How can I make such claims?
+        </p>
+
+        <p className="my-16">
+          A study published in the journal <b>Child Development</b> found that:
+        </p>
+
+        <ul className="ml-8 my-16">
+          <li className="my-8">
+            Children as young as 6 months old can recognize their own unique smell.
+            <br /> <br />
+            This suggests that even from a very young age, children have a sense of their own individuality.
+          </li>
+
+          <p>
+            Another study, published in the journal <b>Nature</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children as young as 3 years old can distinguish between their own emotions and the emotions of others.
+            <br /> <br />
+            This suggests that children have a sophisticated understanding of their own and others' emotions, which is an important part of their individuality.
+          </li>
+
+          <p>
+            A study published in the journal <b>Science</b> found that:
+          </p>
+
+          <li className="my-8">
+            The human brain continues to develop throughout childhood and adolescence.
+            <br /> <br />
+            This means that children are constantly learning and growing, both physically and mentally.
+          </li>
+
+          <p>
+            Another study, published in the journal <b>Nature</b>, found that:
+          </p>
+
+          <li className="my-8">Children's brains are more plastic than adults' brains. This means that children are better able to adapt to new experiences and to learn new things.</li>
+
+          <p>
+            A study published in the journal <b>Pediatrics</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children who feel loved and supported by their parents are more likely to be happy and healthy.
+            <br /> <br />
+            They are also less likely to engage in risky behaviors, such as substance abuse and violence.
+          </li>
+
+          <p>
+            Another study, published in the journal <b>Child Development</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children who feel loved and supported by their parents have better academic achievement.
+            <br /> <br />
+            They are also more likely to graduate from high school and college.
+          </li>
+
+          <p>
+            A study published in the journal <b>Child Development</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children who have clear boundaries and structure are more likely to be well-behaved. <br /> <br />
+            They are also less likely to experience anxiety and depression.
+          </li>
+
+          <p>
+            Another study, published in the journal <b>Journal of Family Psychology</b>, found that:
+          </p>
+
+          <li className="my-8">Children who have clear boundaries and structure are more likely to have healthy relationships with their parents and peers.</li>
+
+          <p>
+            A study published in the journal <b>Pediatrics</b>, found that:
+          </p>
+
+          <li className="my-8">Positive discipline techniques, such as natural consequences and time-outs, are more effective than punishment in teaching children appropriate behavior.</li>
+
+          <p>
+            Another study, published in the journal <b>Child Development</b>, found that:
+          </p>
+
+          <li className="my-8">Children who are disciplined using positive techniques are more likely to have a positive self-image and to be successful in school.</li>
+
+          <p>
+            A study published in the journal <b>Developmental Psychology</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children who are allowed to make mistakes are more likely to be resilient in the face of challenges.
+            <br /> <br /> They are also more likely to be creative and innovative.
+          </li>
+
+          <p>
+            Another study, published in the journal <b>Child Development</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children who are allowed to make mistakes are more likely to have a positive self-image. <br /> <br />
+            They are also more likely to be successful in school.
+          </li>
+
+          <p>
+            A study published in the journal <b>Child Development</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children who feel like their opinions and feelings are heard are more likely to be happy and healthy. <br /> <br /> They are also less likely to engage in risky behaviors, such as substance abuse and violence.
+          </li>
+
+          <p>
+            Another study, published in the journal <b>Journal of Applied Developmental Psychology</b>, found that:
+          </p>
+
+          <li className="my-8">Children who feel like their opinions and feelings are heard are more likely to have healthy relationships with their parents and peers.</li>
+
+          <p>
+            A study published in the journal <b>Pediatrics</b>, found that:
+          </p>
+
+          <li className="my-8">
+            Children who are celebrated for their accomplishments are more likely to be happy and healthy. <br /> <br />
+            They are also more likely to be confident and to have a positive self-image.
+          </li>
+
+          <p>
+            Another study, published in the journal <b>Child Development</b>, found that:
+          </p>
+
+          <li className="my-8">Children who are celebrated for their accomplishments are more likely to be successful in school.</li>
+        </ul>
+
+        <p>Only less than 20% understand this and are implementing what is in my book to raise their kids.</p>
+
+        <p className="my-16">And now…</p>
+
+        <p className="my-16">It's your turn to use these same secrets to be an effective parent and help your child grow up to be a successful and happy adult.</p>
+
+        <p className="my-16">Let me show you….</p>
+
+        <ul className="my-16">
+          <li className="my-8">Different parenting styles and their effects</li>
+          <li className="my-8">Importance of Bonding and Attachment</li>
+          <li className="my-8">and Strategies for nurturing strong connections with your child.</li>
+
+          <p>Plus</p>
+
+          <li className="my-8">how to help children cope with stress, anxiety and emotions.</li>
+          <li className="my-8">Supporting academic success</li>
+          <li className="my-8">Homework and study strategies</li>
+          <li className="my-8">effective communication techniques with children of different ages.</li>
+        </ul>
+
+        <p className="my-16">These secrets…..are outlined in..</p>
+
+        <p className="my-16">The FREE parenting blueprint I am sending you today.</p>
+
+        <p className="my-16">The FREE parenting blueprint I am sending you today.</p>
+
+        <p className="my-16">BUT THAT'S NOT ALL THIS FREE GUIDE REVEALS…</p>
+
+        <ul className="my-16">
+          <li className="my-8">In chapter 1, you will learn how to create a positive parenting mindset.</li>
+          <li className="my-8">In chapter 2, section 2 - you will learn effective communication and active listening skills that many parents fail to understand.</li>
+
+          <p>Then</p>
+
+          <li className="my-8">In chapter 6, section 3 – you will learn the best ways to collaborate with their teachers, and how to support their educational goals that will increase their IQ - only 10% of parents know this.</li>
+        </ul>
+
+        <p>
+          There's more, a lot more that you'll find in the Parenting Blueprint. <br /> <br /> It is easy to read – easy to understand and easy to implement.
+          <br /> <br /> I am not kidding when I say you can learn the strategies in a few hours of reading the book. <br /> <br />
+          And start implementing by tomorrow.
+          <br /> <br /> Then sit back and watch the results.
+          <br /> <br /> Yes, that's how simple this is. <br /> <br />
+          And if you're having any doubts that this isn't as simple as I say it is…
+          <br /> <br /> Here are a few testimonials from the hundreds of positive feedback I got from people that read the parenting blueprint.
+        </p>
+
+        <p className="text-center w-full italic my-16">
+          "The parenting blueprint has been a game-changer for our family. It has given us a clear framework for making decisions about our children's upbringing, and it has helped us to stay consistent in our parenting. We are so much more confident
+          in our parenting now, and we are seeing a real difference in our children's behavior." - Sarah J. <br /> <br />
+          "I used to feel like I was flying by the seat of my pants when it came to parenting. But the parenting blueprint has given me a sense of direction and purpose. I know what I want for my children, and I have a plan for getting there. I am so
+          grateful for this resource!" - Jessica B. <br /> <br />
+          "The parenting blueprint has helped me to become a more patient and understanding parent. I used to get so frustrated when my children misbehaved, but now I understand that they are just learning and growing. I am able to stay calm and
+          handle situations in a positive way. My children are much happier and more well-behaved now, and I am so much happier as a parent." - John D. <br /> <br /> "The parenting blueprint has helped me to create a more positive and loving home
+          environment for my children. I am more mindful of my words and actions, and I am more intentional about spending quality time with my children. My children are happier and more confident, and I am a happier and more fulfilled parent." -
+          Mary S.
+        </p>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </section>
+  );
 }
