@@ -1,9 +1,13 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <section>
-      <div className="heading bg-[#FFFF00] w-full">
+    <section className="max-w-full mx-8 xl:max-w-[900px] lg:mx-auto">
+      <div className="heading bg-[#FFFF00] w-full text-center lg:text-left">
         <div className="w-full border border-gray-600"></div>
-        <h1 className="py-6 px-3 text-4xl font-bold">Are you feeling tired or overwhelmed by the demands of parenting, having trouble setting limits and boundaries for your children and feeling like you're not enjoying your parenting journey?</h1>
+        <h1 className="py-6 px-3 text-4xl font-bold leading-[45px]">
+          Are you feeling tired or overwhelmed by the demands of parenting, having trouble setting limits and boundaries for your children and feeling like you're not enjoying your parenting journey?
+        </h1>
         <div className="w-full border border-gray-600"></div>
       </div>
 
@@ -220,7 +224,7 @@ export default function Home() {
 
         <p className="my-16">Let me show you….</p>
 
-        <ul className="my-16">
+        <ul className="my-16 ml-8">
           <li className="my-8">Different parenting styles and their effects</li>
           <li className="my-8">Importance of Bonding and Attachment</li>
           <li className="my-8">and Strategies for nurturing strong connections with your child.</li>
@@ -241,7 +245,7 @@ export default function Home() {
 
         <p className="my-16">BUT THAT'S NOT ALL THIS FREE GUIDE REVEALS…</p>
 
-        <ul className="my-16">
+        <ul className="my-16 ml-8">
           <li className="my-8">In chapter 1, you will learn how to create a positive parenting mindset.</li>
           <li className="my-8">In chapter 2, section 2 - you will learn effective communication and active listening skills that many parents fail to understand.</li>
 
@@ -270,6 +274,170 @@ export default function Home() {
           environment for my children. I am more mindful of my words and actions, and I am more intentional about spending quality time with my children. My children are happier and more confident, and I am a happier and more fulfilled parent." -
           Mary S.
         </p>
+
+        <p className="my-16">And now it's your turn...</p>
+
+        <p className="my-16">To start raising successful kids without;</p>
+
+        <ul className="my-16 ml-8">
+          <li className="my-8">seeking for professional help</li>
+          <li className="my-8">taking parenting classes</li>
+          <li className="my-8">and disclosing your parenting issues and problems with friends and outsiders.</li>
+        </ul>
+
+        <p className="my-16">Every single detail you need to be a good parent, to feel confident in your parenting skills… </p>
+
+        <p className="my-16">has been included in this Parenting guide I'm sending you today.</p>
+
+        <p className="my-16">
+          Again, this guide is available to you for FREE. <br /> <br /> All I ask is that you sign up for a 30-days trial of my highly regarded lifetime newsletter entitled…. Parenting With Purpose. <br />
+          <br />
+          This is where I reveal proven parenting secrets you can use to raise children with a clear goal in mind.
+          <br /> Each issue is unique and different.
+        </p>
+
+        <p className="my-8">Here's an overview of what the first issue contains</p>
+
+        <ul className="my-16 ml-8">
+          <li className="my-8">How to be a role model to your children.</li>
+          <li className="my-8">How to make time for fun and bonding experiences.</li>
+          <li className="my-8">How to use positive discipline techniques.</li>
+          <li className="my-8">How to be consistent in your approach.</li>
+          <li className="my-8">How to set clear goals for your children.</li>
+        </ul>
+
+        <p>
+          And so much more… <br /> <br />
+          The information revealed in Parenting With Purpose has never before been revealed between the pages of any single book written on the subject of parenting. <br /> <br /> And believe it or not… <br /> <br />
+          Signing up as a subscriber of Parenting With Purpose will cost you only $50 a year – $0.013 a day!
+          <br /> <br /> An incredible bargain… <br /> <br />
+          Given the fact that just one or two ideas in there can help you solve your parenting problems forever.
+          <br /> <br /> Whether you are finding it hard to balance parenting and work.
+          <br /> <br /> You can achieve them using the secrets revealed in <b>Parenting With Purpose.</b>
+          <br /> <br /> But let me sweeten the deal a little. <br /> <br />
+          In addition to the <b>Art of Parenting Success Blueprint</b>. <br /> <br />
+          When you start your risk free trial of <b>Parenting With Purpose</b> today. <br /> <br />I will send you a special guide that shows you – <b>Special Parenting Considerations</b> (worth $30).
+        </p>
+
+        <p className="my-8">You'll learn</p>
+        <ul className="my-16 ml-8">
+          <li className="my-8">Parenting children with special needs or specific challenges.</li>
+          <li className="my-8">Supporting siblings' relationships and fostering cooperation.</li>
+          <li className="my-8">Co-parenting strategies for separated or divorced parents.</li>
+        </ul>
+
+        <p className="my-16">
+          Again you don't need to be a perfect parent.
+          <br /> <br /> You just need to follow the secrets in the special guide.
+          <br /> <br /> And I'm revealing them to you when you sign up for a trial of <b>Parenting With Purpose</b>.
+          <br /> <br /> And here's something even more exciting.
+          <br /> <br /> When you sign up immediately…in the next 24 hours….you will also get , at no extra cost.
+          <br /> <br /> FAST REPLY BONUS - Special Guide 2: <b>Self Care for Parents</b> (worth $40).
+        </p>
+
+        <p className="my-8">You will learn</p>
+
+        <ul className="my-16 ml-8">
+          <li className="my-8">Recognizing the importance of self-care for effective parenting.</li>
+          <li className="my-8">Strategies for managing stress, practicing self-compassion, and finding balance.</li>
+          <li className="my-8">Seeking support and building a support network.</li>
+        </ul>
+
+        <p className="my-8">I've offered you an insane deal</p>
+
+        <ul className="ml-8 my-16">
+          <li className="ml-8 my-8">
+            <span className="font-[500]">FREE</span> — The Art of Parenting Success (worth $50)
+          </li>
+          <li className="ml-8 my-8">
+            <span className="font-[500]">FREE</span> — Special Parenting Considerations (worth $30).
+          </li>
+          <li className="ml-8 my-8">
+            <span className="font-[500]">FREE</span> — Self Care for Parents (worth $40).
+          </li>
+        </ul>
+
+        <p className="my-8">
+          In exchange for a $50 trial of the Parenting With Purpose newsletter I publish every month. <br /> <br /> And now… <br /> <br />
+          I'm going to make it even more pleasurable. <br /> <br /> If YOU click that BIG BUTTON below and sign up right now… <br /> <br />
+          There's no way I'm letting you pay $50. <br /> <br /> You'll only pay $30. <br /> <br /> Dirt cheap, for everything you're getting today.
+        </p>
+
+        <p className="my-8">Here's a review of what you will be getting</p>
+        <ul className="ml-8 my-16">
+          <li className="my-8">
+            FREE <b>------------ The Art of Parenting for Success Blueprint.</b>
+          </li>
+
+          <li className="my-8">
+            FREE <b>------------ Special Guide: Special Parenting Considerations.</b>
+          </li>
+
+          <li className="my-8">
+            FREE <b>------------ FAST REPLY BONUS - Special Guide 2: Self Care for Parents.</b>
+          </li>
+
+          <li className="my-8 font-bold">A Risk Free Trial Of The Parenting With Purpose Newsletter.</li>
+        </ul>
+
+        <p className="my-8">
+          PLUS…
+          <br /> <br /> Your 100% Guarantee of Satisfaction.
+          <br /> <br /> Take 6 months… <br /> <br />
+          Read the first 2 issues of <b>Parenting With Purpose…</b>.
+          <br /> <br /> If you don't feel like it's worth your money.
+          <br /> <br /> Just ask for a full refund….. And you’ll get every penny of your money back.
+          <br /> <br /> No hard feelings. No remorse
+          <br /> <br /> I’ll respect your decision no matter what.
+          <br /> <br /> And you can keep everything I’m sending today.
+          <br /> <br /> Remember… <br /> <br /> The difference between success and failure is not talent…
+          <br /> <br /> Not intelligence…. <br /> <br />
+          Not connections…
+          <br /> <br /> Not even money…
+          <br /> <br /> But action. <br /> <br />
+          And now more than ever…. <br /> <br />
+          You have everything you need to raise happy kids and never again worry about your parenting styles……
+          <br /> <br /> 4-weeks from now…
+          <br /> <br /> You could be nothing more than 1-month older….
+          <br /> <br /> Or you could be enjoying the rewards of a smart decision you made today.
+          <br /> <br /> The choice is up to you. <br /> <br />
+          Click The Button Below to get started right away….
+        </p>
+
+        <Link href="/checkout">
+          <button className="text-[#f3f3f3] bg-[#0b0b17] w-full py-4 rounded-md my-16">Sign Me Up Immediately!</button>
+        </Link>
+
+        <p className="my-16">
+          PS: I've been working on this offer for a long time, and I'm really excited to finally share it with you.
+          <br /> <br /> But I need to be honest with you: this offer is only going to be available for a limited time.
+          <br /> <br /> If you want to take advantage of it, you need to act now.
+        </p>
+
+        <p className="my-8">Here's what you get for FREE:</p>
+
+        <ul className="ml-8 my-16">
+          <li className="my-8 font-bold">The Art of Parenting for Success Blueprint.</li>
+
+          <li className="my-8 font-bold">Special Guide: Special Parenting Considerations.</li>
+
+          <li className="my-8 font-bold">FAST REPLY BONUS - Special Guide 2: Self Care for Parents.</li>
+
+          <li className="my-8 font-bold">A Risk Free Trial Of The Parenting With Purpose Newsletter.</li>
+        </ul>
+
+        <p className="my-8">
+          PLUS: <br /> <br /> Your 100% Guarantee of Satisfaction.
+          <br /> <br /> What do I ask in return?
+          <br /> <br /> Just sign up for a free trial of Parenting With Purpose.
+          <br /> <br /> It normally costs $50, but today, right now, you can get it for only $30.
+          <br /> <br /> This is a limited-time offer, so don't miss out!
+          <br /> <br /> Click the button below to get started!
+        </p>
+
+        <Link href="/checkout">
+          <button className="text-[#f3f3f3] bg-[#0b0b17] w-full py-4 rounded-md my-16">Yes. Sign Me Up Immediately!</button>
+        </Link>
       </div>
     </section>
   );

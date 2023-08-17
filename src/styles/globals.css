@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;700');
 
 @tailwind base;
 @tailwind components;
@@ -16,4 +16,9 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   width: 100%;
+}
+
+label::after {
+  content: '*';
+  color: #0b0b17;
 }
