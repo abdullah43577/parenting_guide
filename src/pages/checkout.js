@@ -1,6 +1,7 @@
 import CheckoutSummary from '@/components/CheckoutSummary';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { FlutterWaveButton, closePaymentModal } from 'flutterwave-react-v3';
 
 export default function Checkout() {
   const [formData, setFormData] = useState({
@@ -25,6 +26,35 @@ export default function Checkout() {
   const handleFormSubmit = function (event) {
     event.preventDefault();
     console.log('form submitted');
+  };
+
+  const config = {
+    // public_key: process.env.FLUTTERWAVE_PUBLIC_API_KEY,
+    public_key: REACT_APP_FLTW_TEST_PUBLIC_KEY,
+    tx_ref: Date.now(),
+    amount: 20000,
+    currency: 'NGN',
+    payment_options: 'card,mobilemoney,ussd',
+    customer: {
+      email: formData.email,
+      phone: formData.phone,
+      name: formData.firstName + " " + formData.lastName
+    },
+    customizations: {
+      title: 'My store',
+      description: 'Payment for items in cart',
+      logo: 'https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg',
+    },
+  };
+
+  const fwConfig = {
+    ...config,
+    text: 'Proceed to payment',
+    callback: async (response) => {
+      console.log(response);
+      closePaymentModal(); // this will close the modal programmatically
+    },
+    onClose: () => { },
   };
 
   return (
@@ -117,7 +147,7 @@ export default function Checkout() {
           <div className="border border-gray-500 w-full my-4"></div>
 
           <Link href="/checkout">
-            <button className="text-[#f3f3f3] bg-[#0b0b17] w-full py-4 rounded-md my-8">Proceed To Pay</button>
+            <FlutterWaveButton {...fwConfig}  className="text-[#f3f3f3] bg-[#0b0b17] w-full py-4 rounded-md my-8" />
           </Link>
         </div>
       </form>
