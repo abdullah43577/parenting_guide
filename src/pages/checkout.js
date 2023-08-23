@@ -24,7 +24,7 @@ export default function Checkout() {
 
   const config = {
     // public_key: process.env.FLUTTERWAVE_PUBLIC_API_KEY,
-    public_key: REACT_APP_FLTW_TEST_PUBLIC_KEY,
+    public_key: process.env.REACT_APP_FLTW_TEST_PUBLIC_KEY,
     tx_ref: Date.now(),
     amount: 20000,
     currency: 'NGN',
@@ -32,7 +32,7 @@ export default function Checkout() {
     customer: {
       email: formData.email,
       phone: formData.phone,
-      name: formData.firstName + " " + formData.lastName
+      name: formData.firstName + ' ' + formData.lastName,
     },
     customizations: {
       title: 'My store',
@@ -48,7 +48,7 @@ export default function Checkout() {
       console.log(response);
       closePaymentModal(); // this will close the modal programmatically
     },
-    onClose: () => { },
+    onClose: () => {},
   };
 
   return (
@@ -108,7 +108,7 @@ export default function Checkout() {
           <div className="border border-gray-500 w-full my-4"></div>
 
           <Link href="/checkout">
-            <FlutterWaveButton {...fwConfig}  className="text-[#f3f3f3] bg-[#0b0b17] w-full py-4 rounded-md my-8" />
+            <FlutterWaveButton {...fwConfig} className="text-[#f3f3f3] bg-[#0b0b17] w-full py-4 rounded-md my-8" />
           </Link>
         </div>
       </form>
