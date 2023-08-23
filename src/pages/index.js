@@ -5,17 +5,17 @@ export default function Home() {
     <section className="max-w-full mx-8 xl:max-w-[900px] lg:mx-auto">
       <div className="heading bg-[#FFFF00] w-full text-center lg:text-left">
         <div className="w-full border border-gray-600"></div>
-        <h1 className="py-6 px-3 text-4xl font-bold leading-[45px]">
+        <h1 className="py-6 px-3 text-2xl lg:text-4xl font-bold leading-[45px]">
           Are you feeling tired or overwhelmed by the demands of parenting, having trouble setting limits and boundaries for your children and feeling like you're not enjoying your parenting journey?
         </h1>
         <div className="w-full border border-gray-600"></div>
       </div>
 
-      <div className="subhead text-[#ff0000] font-[500] mt-16 text-5xl leading-[60px]">
+      <div className="subhead text-[#ff0000] font-[500] mt-16 text-3xl lg:text-5xl leading-[60px]">
         <b>WARNING:</b> This could be the most important information you will ever read about raising successful and happy kids.
       </div>
 
-      <div className="subhead2 text-[#0000FF] font-[500] mt-16 text-4xl leading-[50px]">
+      <div className="subhead2 text-[#0000FF] font-[500] mt-16 text-2xl lg:text-4xl leading-[50px]">
         Discover the little-known (and never talked about) success philosophies, beliefs, thinking, and personal behaviors that allow parents to raise confident, capable, and resilient children who are on track to achieve their full potential.
       </div>
 
