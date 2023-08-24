@@ -10,11 +10,21 @@ export default function Checkout() {
     email: '',
   });
 
-  useEffect(() => console.log(formData), [formData]);
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  useEffect(() => {
+    checkFormValidity();
+  }, [formData]);
+
+  const checkFormValidity = () => {
+    const isValid = Object.values(formData).every(value => value.trim() !== '');
+    setIsFormValid(isValid);
+  };
 
   const handleInputChange = function (e) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    checkFormValidity();
   };
 
   const handleFormSubmit = function (event) {
@@ -23,8 +33,7 @@ export default function Checkout() {
   };
 
   const config = {
-    // public_key: process.env.FLUTTERWAVE_PUBLIC_API_KEY,
-    public_key: process.env.REACT_APP_FLTW_TEST_PUBLIC_KEY,
+    public_key: "FLWPUBK_TEST-df1eedfa663a041078c0c2fe408155f0-X",
     tx_ref: Date.now(),
     amount: 20000,
     currency: 'NGN',
@@ -44,12 +53,15 @@ export default function Checkout() {
   const fwConfig = {
     ...config,
     text: 'Proceed to payment',
+    disabled: !isFormValid, // Disable button if form is not valid
     callback: async (response) => {
       console.log(response);
-      closePaymentModal(); // this will close the modal programmatically
+      closePaymentModal();
     },
     onClose: () => {},
   };
+
+  
 
   return (
     <section className="checkout my-16 mx-8">
@@ -108,7 +120,7 @@ export default function Checkout() {
           <div className="border border-gray-500 w-full my-4"></div>
 
           <Link href="/checkout">
-            <FlutterWaveButton {...fwConfig} className="text-[#f3f3f3] bg-[#0b0b17] w-full py-4 rounded-md my-8" />
+            <FlutterWaveButton {...fwConfig} className={`text-[#f3f3f3] ${isFormValid ? "bg-[#0b0b17]" : "bg-gray-400"} w-full py-4 rounded-md my-8`} />
           </Link>
         </div>
       </form>
