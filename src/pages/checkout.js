@@ -35,7 +35,7 @@ export default function Checkout() {
   const config = {
     public_key: 'FLWPUBK-18f80ec2bee4ce9f45b112d5c9670b14-X',
     tx_ref: Date.now(),
-    amount: 10,
+    amount: 5,
     currency: 'USD',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
