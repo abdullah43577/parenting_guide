@@ -33,7 +33,7 @@ export default function Checkout() {
   };
 
   const config = {
-    public_key: 'FLWPUBK_TEST-df1eedfa663a041078c0c2fe408155f0-X',
+    public_key: 'FLWPUBK-18f80ec2bee4ce9f45b112d5c9670b14-X',
     tx_ref: Date.now(),
     amount: 10,
     currency: 'USD',
