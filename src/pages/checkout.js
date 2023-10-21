@@ -17,7 +17,7 @@ export default function Checkout() {
   }, [formData]);
 
   const checkFormValidity = () => {
-    const isValid = Object.values(formData).every(value => value.trim() !== '');
+    const isValid = Object.values(formData).every((value) => value.trim() !== '');
     setIsFormValid(isValid);
   };
 
@@ -33,10 +33,10 @@ export default function Checkout() {
   };
 
   const config = {
-    public_key: "FLWPUBK_TEST-df1eedfa663a041078c0c2fe408155f0-X",
+    public_key: 'FLWPUBK_TEST-df1eedfa663a041078c0c2fe408155f0-X',
     tx_ref: Date.now(),
-    amount: 20000,
-    currency: 'NGN',
+    amount: 10,
+    currency: 'USD',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
       email: formData.email,
@@ -60,8 +60,6 @@ export default function Checkout() {
     },
     onClose: () => {},
   };
-
-  
 
   return (
     <section className="checkout my-16 mx-8">
@@ -120,7 +118,7 @@ export default function Checkout() {
           <div className="border border-gray-500 w-full my-4"></div>
 
           <Link href="/checkout">
-            <FlutterWaveButton {...fwConfig} className={`text-[#f3f3f3] ${isFormValid ? "bg-[#0b0b17]" : "bg-gray-400"} w-full py-4 rounded-md my-8`} />
+            <FlutterWaveButton {...fwConfig} className={`text-[#f3f3f3] ${isFormValid ? 'bg-[#0b0b17]' : 'bg-gray-400'} w-full py-4 rounded-md my-8`} />
           </Link>
         </div>
       </form>
